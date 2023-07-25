@@ -5,7 +5,8 @@ const image1Element = document.getElementById('image1');
 const image2Element = document.getElementById('image2');
 const image3Element = document.getElementById('image3');
 const productContainer = document.getElementById('product-container');
-const resultButton = document.getElementById('')
+const resultButton = document.getElementById('');
+let rounds = 25;
 
 function Product(name, src) {
   this.name = name;
@@ -53,16 +54,24 @@ function handleProductClicks(event) {
   // console.log(event.target.alt);
     if (event.target === productContainer) {
         alert ('Please click on a Product');
-    return
+    return;
     }
+
+    if (rounds > 0){
   for (let i = 0; i < products.length; i++) {
     if (products[i].name === event.target.alt) {
       products[i].timesClicked++;
+      break;
     };
   }
   console.log(products);
   displayRandomProducts();
+  rounds--;
+} else {
+    alert('No more rounds')
+    productContainer.removeEventListener('click',handleProductClicks);
+}
 }
 
 productContainer.addEventListener('click', handleProductClicks);
-productContainer.removeEventListener('click', handleProductClicks)
+productContainer.removeEventListener('click', handleProductClicks);
