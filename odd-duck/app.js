@@ -5,7 +5,7 @@ const image1Element = document.getElementById('image1');
 const image2Element = document.getElementById('image2');
 const image3Element = document.getElementById('image3');
 const productContainer = document.getElementById('product-container');
-const resultButton = document.getElementById('');
+const resultButton = document.getElementById('resultButton');
 let rounds = 25;
 
 function Product(name, src) {
