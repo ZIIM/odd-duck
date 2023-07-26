@@ -16,15 +16,21 @@ function Product(name, src) {
   products.push(this);
 }
 
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+
 
 
 displayRandomProducts();
