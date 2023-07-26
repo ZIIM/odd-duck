@@ -59,7 +59,7 @@ function displayRandomProducts() {
 
 // code that runs when a user has voted 
 function handleProductClicks(event) {
-  // console.log(event.target.alt);
+  // console.log(event.target.alt); test
     if (event.target === productContainer) {
         alert ('Please click on a Product');
     return;
