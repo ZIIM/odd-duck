@@ -44,7 +44,7 @@ function displayRandomProducts() {
   while(randomProductIndex1 === randomProductIndex2) {
     randomProductIndex2 = Math.floor(Math.random() * products.length);
   }
-//while(image1Element.alt === products[randomProductIndex1].name)
+//while(image1Element.alt === products[randomProductIndex1].name) test
 
   image1Element.src = products[randomProductIndex1].src;
   image1Element.alt = products[randomProductIndex1].name;
