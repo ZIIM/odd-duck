@@ -30,7 +30,13 @@ new Product('', '.jpg');
 new Product('', '.jpg');
 new Product('', '.jpg');
 new Product('', '.jpg');
-
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
+new Product('', '.jpg');
 
 
 displayRandomProducts();
