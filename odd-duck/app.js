@@ -16,15 +16,25 @@ function Product(name, src) {
   products.push(this);
 }
 
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
-new Product('cruisin goat', 'assets/images/cruisin-goat.jpg');
+new Product('bag', 'img/bag.jpg');
+new Product('banana', 'img/banana.jpg');
+new Product('bathroom', 'img/bathroom.jpg');
+new Product('boots', 'img/boots.jpg');
+new Product('breakfast', 'img/breakfast.jpg');
+new Product('bubblegum', 'img/bubblegum.jpg');
+new Product('chair', 'img/chair.jpg');
+new Product('cthulu', 'img/cthulu.jpg');
+new Product('dog-duck', 'img/dog-duck.jpg');
+new Product('dragon', 'img/dragon.jpg');
+new Product('pen', 'img/pen.jpg');
+new Product('pet-sweep', 'img/pen-sweep.jpg');
+new Product('scissors', 'img/scissors.jpg');
+new Product('shark', 'img/shark.jpg');
+new Product('sweep', 'img/sweep.png');
+new Product('tauntaun', 'img/tauntaun.jpg');
+new Product('unicorn', 'img/unicorn.jpg');
+new Product('water-can', 'img/water-can.jpg');
+new Product('wine-glass', 'img/wine-glass.jpg');
 
 
 displayRandomProducts();
@@ -38,7 +48,7 @@ function displayRandomProducts() {
   while(randomProductIndex1 === randomProductIndex2) {
     randomProductIndex2 = Math.floor(Math.random() * products.length);
   }
-//while(image1Element.alt === products[randomProductIndex1].name)
+//while(image1Element.alt === products[randomProductIndex1].name) test
 
   image1Element.src = products[randomProductIndex1].src;
   image1Element.alt = products[randomProductIndex1].name;
@@ -53,7 +63,7 @@ function displayRandomProducts() {
 
 // code that runs when a user has voted 
 function handleProductClicks(event) {
-  // console.log(event.target.alt);
+  // console.log(event.target.alt); test
     if (event.target === productContainer) {
         alert ('Please click on a Product');
     return;
